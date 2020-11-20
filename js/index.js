@@ -11,13 +11,19 @@ let perPerson;
 
 
 const show = () => {
+    let loader = document.getElementById('loader');
+    loader.style.display = 'block';
+    setTimeout(() => {
+        loader.style.display = 'none';
+        document.getElementById('answer').innerHTML = `<div class="answerDiv">  <h3>Tip Amount: ${tipAmount}</h3><br> 
+                                                                                <h3>Total Amount: ${totalAmount}</h3><br>
+                                                                                <h3>one person owes: ${perPerson}</h3>
+                                                        </div>`;
+        
+    }, 2000);
     setTimeout(() => {
         document.getElementById('answer').innerHTML = '';
-    }, 10000);
-    document.getElementById('answer').innerHTML = `<div class="answerDiv">  <h3>Tip Amount: ${tipAmount}</h3><br> 
-                                                                            <h3>Total Amount: ${totalAmount}</h3><br>
-                                                                            <h3>one person owes: ${perPerson}</h3>
-                                                    </div>`;
+    }, 20000);
 }
 
 const doAlert = () => {
