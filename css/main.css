@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+.containerr{
+    background-color: rgb(144, 179, 209);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    border-radius: 9px;
+    background-color: rgb(231, 231, 224);
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:  0 auto;
+    /* height: 80vh; */
+    width: 60vw;
+}
+.heading{
+    background-color: rgb(5, 114, 114);
+    height: 10vh;
+    width: 40vw;
+    text-align: center;
+    border-radius: 9px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.alerts{
+    background-color: rgb(241, 140, 140);
+    width: 95%;
+    height: 25%;
+    border-radius: 9px;
+    margin: 15px 0;
+    padding: 10px;
+    display: none;
+}
+
+.form{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 50vh;
+    width: 38vw;
+}
+
+.form input, select{
+    outline: blue;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+}
+
+.button{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    margin: 0 auto;
+    background-color: rgb(5, 114, 114);
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(8, 160, 160);
+    transform: scale(1.1);
+    transition: 0.3s all ease-in-out;
+}
+
+.option{
+    font-size: 1.3rem;
+
+}
+
+.show{
+    display: block;
+}
+
+.answerDiv{
+    background-color: rgb(98, 169, 231);
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 9px;
+    margin-bottom: 7px;
+}
+
+.answerDiv h3{
+    margin: 3px 0px;
+    padding: 0;
+}
+
+.footer{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer a {
+    color: red;
+    text-decoration: none;
+}
+
