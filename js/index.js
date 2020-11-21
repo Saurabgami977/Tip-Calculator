@@ -17,7 +17,7 @@ const show = () => {
         loader.style.display = 'none';
         document.getElementById('answer').innerHTML = `<div class="answerDiv">  <h3>Tip Amount: ${tipAmount}</h3><br> 
                                                                                 <h3>Total Amount: ${totalAmount}</h3><br>
-                                                                                <h3>one person owes: ${perPerson}</h3>
+                                                                                <h3>Each person owes: ${perPerson}</h3>
                                                         </div>`;
         
     }, 2000);
