@@ -30,11 +30,11 @@ body {
 }
 .heading {
   background-color: rgb(5, 114, 114);
-  height: 10vh;
+  height: 5vw;
   width: 40vw;
   text-align: center;
   border-radius: 9px;
-  font-size: 0.8rem;
+  font-size: 1.3vw;
   color: white;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .form {
-  font-size: 1.4rem;
+  font-size: 2vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -135,5 +135,22 @@ select {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 800px) {
+  .form, .answerDiv, .button, .alerts {
+    font-size: 3.5vw;
+  }
+  .heading{
+    font-size: 1.4vw;
+    height: 8vw;
   }
 }
