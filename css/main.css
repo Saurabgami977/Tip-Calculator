@@ -4,9 +4,10 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   padding: 0;
+  height: 200VH;
+  background-color: rgb(144, 179, 209);
 }
 .containerr {
-  background-color: rgb(144, 179, 209);
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -56,6 +57,7 @@ body {
   flex-direction: column;
   height: 50vh;
   width: 38vw;
+  margin: 15px 0px ;
 }
 
 .form input,
@@ -101,6 +103,7 @@ select {
   padding: 10px;
   border-radius: 9px;
   margin-bottom: 7px;
+  margin-top: 15px;
 }
 
 .answerDiv h3 {
@@ -127,6 +130,7 @@ select {
   height: 120px;
   animation: spin 2s linear infinite;
   display: none;
+  margin: 10px 3px;
 }
 
 @keyframes spin {

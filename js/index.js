@@ -30,7 +30,7 @@ const doAlert = () => {
     alerts.innerHTML = '';
     if(amount.value === '' || amount.value <= '0'){
         alerts.classList.add('show');
-        alerts.innerHTML += `<h4 class="alert" id="nullAmount">Bill Amount Cannot Be Blank</h4>`
+        alerts.innerHTML += `<h4 class="alert" id="nullAmount">Bill Amount Cannot Be Blank or Less then 1</h4>`
     }
 
     if(numberOfPeople.value == '' || numberOfPeople.value <= '1'){
@@ -50,7 +50,7 @@ const doAlert = () => {
 }
 
 const calculate = () => {
-    if(amount.value == '' || numberOfPeople.value == '' || chooseService.value == 0){
+    if(amount.value == '' || numberOfPeople.value == '' || chooseService.value == 0 || amount.value <= 0){
         doAlert();
     }else{
         tipAmount = (chooseService.value/100) * amount.value;
